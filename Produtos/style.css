@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  font-family: "Bebas Neue", cursive;
+  min-width: 100vh;
+  position: absolute;
+}
+
+header {
+  display: flex;
+}
+
+#logo {
+  height: 12vh;
+  width: 8vw;
+  margin-left: 4em;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  font-size: 3vh;
+}
+
+.toolbar-items {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#car {
+  width: 2vw;
+  height: 3vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  line-height: 2;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: black;
+}
+
+a::after {
+  display: block;
+  content: "";
+  height: 3px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: 0.2s ease-in-out;
+}
+a:hover::after {
+  transform: scaleX(1);
+}
+
+#search {
+  height: 4vh;
+  width: 12vw;
+  text-transform: uppercase;
+  border-radius: 0.35rem;
+  font-size: 1rem;
+  border: 2px solid black;
+}
+
+#search::placeholder {
+  font-size: 1rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  justify-content: center;
+}
+
+.card {
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 2.5rem;
+  width: 21.75rem;
+  height: 28.625rem;
+  border: 2px solid white;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card > img {
+  padding-top: 0.625rem;
+  width: 16rem;
+  height: 16rem;
+  letter-spacing: 0.1em;
+}
+.produtos {
+margin: 0 auto;
+transform: translate(-10%);
+}
+
+h2 {
+  margin-top: 1vh;
+  letter-spacing: 0.05rem;
+}
+h2:hover{
+  color: aqua;
+}
+button {
+  color: black;
+  border-radius: 0.313rem;
+  padding-bottom: 0.320rem;
+  padding-top: 0.320rem;
+  text-transform: uppercase;
+  background-color: aqua;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 1vh;
+}
+button:hover{
+  color: black;
+  -webkit-box-shadow: 0px 0px 100px 0px rgba(23, 38, 204);
+  -moz-box-shadow: 0px 0px 100px 0px rgba(23, 38, 204);
+  box-shadow: 0px 0px 100px 0px rgba(23, 38, 204);
+  transition: .8s ease;
+  color: rgb(77, 112, 239);
+}
+.cardHeart{
+  padding-top: 1rem;
+}
+.cardHeart:hover{
+  filter:drop-shadow(0 0 0.1rem rgb(37, 203, 254))
+}
+.links {
+  text-decoration: none;
+  color: none;
+  line-height: none;
+  transition: none;
+}
+.links:hover {
+  color: none;
+}
+.links::after {
+  display: inline;
+  content: "";
+  height: 0;
+  background-color: none;
+  transform: none;
+  transition: none;
+}
+.link:hover::after {
+  transform: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.end-page{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aqua;
+  width: 100vw;
+  height: 15rem;
+}
+#end-page-h1{
+font-size: 4em;
+font-weight: bold;
+padding-top: 2rem;
+}
+#end-page-input{
+width: 35em;
+height: 5em;
+border-radius: 1rem;
+}
+#end-page-input::placeholder{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 4rem;
+}
+#end-page-button{
+  width: 35em;
+  height: 4em;
+  border-radius: 1rem;
+}
+#end-page-button::placeholder{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+}
